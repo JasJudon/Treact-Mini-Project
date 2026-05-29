@@ -138,7 +138,7 @@ p {
   max-width: 448px;
   border: 2px solid #dcdcdc;
   border-radius: 40px;
-  padding: 8px;
+  padding: 2px;
   background-color: white;
   height: 68px;
 }
@@ -150,7 +150,7 @@ p {
   width: fit-content;
   border: none;
   border-radius: 40px;
-  padding-left: 20px;
+  padding-left: 24px;
   outline: none;
   flex: 1;
   width: 100%;
@@ -158,20 +158,20 @@ p {
 
 .header__email--button {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   background-color: rgb(100, 21, 255);
   border-radius: 40px;
   border: none;
-  padding: 10px 24px;
   z-index: 2;
   margin: 8px;
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.3s ease background-color 0.3s ease;
 }
 
 .header__email--button:hover {
   background-color: 0.3s ease rgb(76, 8, 211);
-  cursor: pointer;
-  transition: transform 0.3s ease; 
 }
 
 .header__img--main {
