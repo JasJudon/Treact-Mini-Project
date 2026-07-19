@@ -90,10 +90,12 @@ nav {
 }
 
 .nav__link {
+  position: relative;
   text-decoration: none;
   font-size: 14px;
   color: #243E63;
   font-weight: 600;
+  padding-bottom: 6px;
 }
 
 .nav__link.login {
@@ -101,8 +103,7 @@ nav {
 }
 
 .nav__link:hover {
-  text-decoration: underline;
-  color: #243E63;
+  border-bottom: 2px solid rgb(100, 21, 255);
 }
 
 .nav__button {
@@ -114,6 +115,7 @@ nav {
   border: none;
   cursor: pointer;
   padding: 10px 30px;
+  text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -125,6 +127,10 @@ nav {
 
 .header__description {
   max-width: 40%;
+}
+
+.header__img--main {
+  max-width: 60%;
 }
 
 .header__para {
@@ -176,10 +182,6 @@ nav {
 
 .btn:hover {
   background-color: rgb(76, 8, 211);
-}
-
-.header__img--main {
-  max-width: 60%;
 }
 
 .header__customer--title {
@@ -287,24 +289,24 @@ nav {
 
 /*MAIN - QUALITY*/
 .quality__description {
-  max-width: 576px;
   margin-right: 64px;
-  max-width: 40%;
+  width: 40%;
 }
 
 .quality__img--wrapper {
-  max-width: 60%;
+  width: 60%;
 }
 
 /*MAIN - STEPS*/
 .steps__img--wrapper {
-  max-width: 50%;
+  width: 50%;
   display: flex;
   position: relative;
 }
 .steps__description {
   padding: 32px 0;
   padding-left: 64px;
+  width: 50%;
 }
 
 .step {
@@ -334,4 +336,21 @@ nav {
   margin-top: 12px;
   font-weight: 500;
   line-height: 2;
+}
+
+/*MAIN - VALUES*/
+.values__description {
+  max-width: 50%;
+}
+
+.values__img--wrapper {
+  max-width: 50%;
+}
+
+i {
+  background-color: #9ae6b4;
+}
+
+.value__para {
+  font-size: 16px;
 }
