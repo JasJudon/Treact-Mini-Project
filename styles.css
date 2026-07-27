@@ -283,7 +283,7 @@ nav {
 
 .feature__para {
   font-size: 16px;
-  color: #7c8ba1;
+  color: #718096;
   line-height: 2;
   max-width: calc(634px/3);
   font-weight: 500;
@@ -463,7 +463,7 @@ nav {
 }
 
 .plan__duration {
-   color: #cbd5e0;
+   color:#718096;
 }
 
 .plan__name, .plan__price {
@@ -478,7 +478,31 @@ nav {
 
 /*PRICING - MIDDLE*/
 
+.plan__target {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
 
+.plan__feature {
+  color: #718096;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+/*PRICING - BOTTOM*/
+.plan__bottom {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
 
 .plan__btn {
   color: white;
