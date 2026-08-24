@@ -300,11 +300,11 @@ nav {
 }
 
 /*MAIN - STEPS*/
-#steps {
+.step {
   display: flex;
   align-items: flex-start;
-  align-items: center;
-  margin: 0 100px;
+  max-width: 320px;
+  padding-bottom: 16px;
 }
 
 .steps__img--wrapper {
@@ -460,7 +460,13 @@ nav {
   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
-.plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+.plan:nth-child(even) :is(
+  .plan__name, 
+  .plan__price, 
+  .plan__target, 
+  .plan__duration,
+  .plan__feature,
+) {
   color: white;
 }
 
