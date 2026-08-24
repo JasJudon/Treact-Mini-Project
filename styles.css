@@ -2,7 +2,7 @@
 
 /*GENERAL*/
 body {
-  padding: 0 100px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -300,6 +300,13 @@ nav {
 }
 
 /*MAIN - STEPS*/
+#steps {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  margin: 0 100px;
+}
+
 .steps__img--wrapper {
   width: 50%;
   display: flex;
@@ -310,12 +317,6 @@ nav {
   padding: 32px 0;
   padding-left: 64px;
   width: 50%;
-}
-
-.step {
-  display: flex;
-  align-items: flex-start;
-  max-width: 320px;  
 }
 
 .step__number {
@@ -712,10 +713,11 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 6rem 60px;
+  padding: 6rem 0;
   margin-top: 5rem;
   background:rgb(76, 8, 211);
   gap: 5rem;
+  flex-direction: column;
 }
 
 
