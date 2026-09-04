@@ -81,7 +81,7 @@ nav {
   font-weight: 900;
 }
 
-.nav-links {
+.nav__links {
   display: flex;
   list-style: none;
   letter-spacing: 0.35px;
@@ -109,7 +109,7 @@ nav {
 .nav__btn {
   color: white;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   background-color: rgb(100, 21, 255);
   border-radius: 40px;
   border: none;
@@ -307,6 +307,10 @@ nav {
   padding-bottom: 16px;
 }
 
+#steps .row {
+  transform: translateX(5rem);
+}
+
 .steps__img--wrapper {
   width: 50%;
   display: flex;
@@ -344,11 +348,11 @@ nav {
 
 /*MAIN - VALUES*/
 .values__description {
-  max-width: 40%;
+  max-width: 45%;
 }
 
 .values__img--wrapper {
-  max-width: 60%;
+  max-width: 55%;
 }
 
 .values__list {
@@ -443,7 +447,7 @@ nav {
   height: 0.5rem;
 }
 
-.plan:nth-child(odd) .plan__middle {
+.plan__middle {
   border-top: 2px solid rgb(229, 231, 235);
   border-bottom: 2px solid rgb(229, 231, 235);
 }
@@ -656,7 +660,6 @@ nav {
 
 /*START*/
 
-
 .start__row {
   display: flex;
   justify-content: center;
@@ -664,7 +667,7 @@ nav {
   width: 100%;
   padding: 6rem 60px;
   margin-top: 5rem;
-  background:rgb(76, 8, 211);
+  background:rgb(100, 21, 255);
   gap: 5rem;
   border-radius: 15px;
 }
@@ -704,7 +707,7 @@ nav {
 }
 
 .start__btn:nth-child(2) {
-  background-color: rgb(76, 8, 211);
+  background-color: rgb(100, 21, 255);
   border: 1px solid rgb(160, 174, 192);
 }
 
@@ -721,24 +724,65 @@ nav {
   width: 100%;
   padding: 6rem 0;
   margin-top: 5rem;
-  background:rgb(76, 8, 211);
+  background:rgb(100, 21, 255);
   gap: 5rem;
   flex-direction: column;
 }
 
-
 .footer__columns {
   display: flex;
   justify-content: space-between;
+  color: white;
+  width: 100%;
+  padding: 0 4rem;
+  box-sizing: border-box;
 }
 
 .footer__column {
-  width: calc(100%/5);
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/5);
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 16px;
 }
 
 .footer__divider {
   background-color: #7c8ba1;
   width: 100%;
   height: 1px;
+  max-width: 75%;
+  opacity: 1;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo--title {
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  margin-left: 8px;
+  letter-spacing: 0.05em;
+}
+
+.footer__copyright {
+  color: white;
+  font-weight: 500;
+}
+
+.footer__socials {
+  color: white;
 }
