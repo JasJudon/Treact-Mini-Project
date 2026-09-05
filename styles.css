@@ -96,12 +96,24 @@ nav {
   padding-bottom: 6px;
 }
 
-.nav__link.login {
-  margin-left: 36px;
+.nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(100, 21, 255);
+    transition: opacity 300ms ease;
+    opacity: 0;
 }
 
-.nav__link:hover {
-  border-bottom: 2px solid rgb(100, 21, 255);
+.nav__link:hover::after {
+    opacity: 1;
+}
+
+.nav__link.login {
+  margin-left: 36px;
 }
 
 .nav__btn {
@@ -117,7 +129,7 @@ nav {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.nav__button:hover {
+.nav__btn:hover {
   background-color: rgb(76, 8, 211);
 }
 
@@ -782,6 +794,26 @@ footer {
   color: white;
   line-height: 1.5;
   margin-top: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer__column--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: opacity 300ms ease;
+    opacity: 0;
+}
+
+.footer__column--link:hover::after {
+    opacity: 1;
 }
 
 .footer__divider {
