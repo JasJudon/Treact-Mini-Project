@@ -624,7 +624,7 @@ header .row {
   max-width: 50%;
 }
 
-.testimonial__rating {
+.testimonial__rating .fa-star {
   margin-bottom: 1rem;
   color: rgba(246, 173, 85);
 }
