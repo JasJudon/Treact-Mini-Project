@@ -20,8 +20,6 @@ html {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 
 h1 {
@@ -124,6 +122,10 @@ nav {
 }
 
 /*HEADER*/
+header .row {
+  display: flex;
+  align-items: center;
+}
 
 .header__description {
   max-width: 40%;
@@ -264,11 +266,12 @@ nav {
   width: 66px;
   height: 66px;
   display: flex;
-  border: 1px solid #7c8ba1;
+  border: 1px solid #e5e7eb;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin: 0;
 }
 
 .feature__text {
@@ -290,6 +293,11 @@ nav {
 }
 
 /*MAIN - QUALITY*/
+#quality .row {
+  display: flex;
+  align-items: center;
+}
+
 .quality__description {
   margin-right: 64px;
   width: 40%;
@@ -300,6 +308,11 @@ nav {
 }
 
 /*MAIN - STEPS*/
+#steps .row {
+  display: flex;
+  align-items: center;
+}
+
 .step {
   display: flex;
   align-items: flex-start;
@@ -347,6 +360,12 @@ nav {
 }
 
 /*MAIN - VALUES*/
+#values .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .values__description {
   max-width: 45%;
 }
@@ -571,6 +590,11 @@ nav {
 }
 
 /*TESTIMONIALS*/
+#testimonials .row {
+  display: flex;
+  align-items: center;
+}
+
 .testimonial__description {
   max-width: 45%;
 }
@@ -664,7 +688,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 6rem 60px;
   margin-top: 5rem;
   background:rgb(100, 21, 255);
@@ -718,7 +741,7 @@ nav {
 
 /*FOOTER*/
 
-.footer__row {
+footer {
   display: flex;
   align-items: center;
   width: 100%;
@@ -729,10 +752,16 @@ nav {
   flex-direction: column;
 }
 
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 16px;
+  color: white;
+}
+
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  color: white;
   width: 100%;
   padding: 0 4rem;
   box-sizing: border-box;
@@ -743,12 +772,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: calc(100%/5);
-}
-
-.footer__title {
-  text-transform: uppercase;
-  font-weight: 900;
-  padding-bottom: 16px;
+  color: white;
 }
 
 .footer__divider {
@@ -770,6 +794,11 @@ nav {
   align-items: center;
 }
 
+.footer__logo--img {
+  width: 35px;
+  height: 35px;
+}
+
 .footer__logo--title {
   font-size: 20px;
   color: white;
@@ -784,5 +813,15 @@ nav {
 }
 
 .footer__socials {
-  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social--link {
+  border-radius: 50%;
+  padding: 8px;
+  background: white;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
