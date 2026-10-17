@@ -911,7 +911,7 @@ footer {
   background-color: rgba(203, 213, 224);
 }
 
-/*TABLETS, SMALL PHONES, LARGE SMARTPHONES*/
+/*TABLETS, LARGE SMARTPHONES*/
 @media (max-width: 1024px) {
 
   /* GENERAL */
@@ -1100,6 +1100,7 @@ footer {
   }
 }
 
+/*SMALL TABLETS & PHONES*/
 @media (max-width: 768px) {
 
   /* GENERAL */
@@ -1405,9 +1406,9 @@ footer {
     gap: 24px;
     text-align: center;
   }
-
 }
 
+/*SMALL PHONES*/
 @media (max-width: 480px) {
 
   /* GENERAL */
